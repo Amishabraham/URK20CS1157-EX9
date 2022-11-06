@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script>
+    var app = angular.module('myapp',['ngRoute']);
+    var app = angular.module('myapp',['ngRoute']); 
+    app.config(function($routeProvider){
+        $routeProvider.when('/URK20CS1157',{ templateUrl:'Ex9_1157.html'
+    })
+    .when('/URK20CS2002',{ templateUrl:'Ex9_2002.html'
+})
+.when('/URK20CS2111',{ templateUrl:'Ex9_2111.html'
+})
+.when('/URK20CS2014',{ templateUrl:'Ex9_2014.html'
+})
+})
+</script>
+</head>
+<body ng-app="myapp">
+    <a href="Ex9_1157.html">URK20CS1157</a>
+    <a href="Ex9_2002.html">URK20CS2002</a>
+    <a href="Ex9_2111.html">URK20CS2111</a>
+    <a href="Ex9_2014.html">URK20CS2014</a>
+    <hr>
+    <div ng-view>
+    </div>
+</body>
+</html>
+
+    
+    
+    
